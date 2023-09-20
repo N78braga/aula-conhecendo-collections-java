@@ -3,7 +3,6 @@ package aula_pesquizando_set.agenda;
 import aula_pesquizando_set.contato.Contato;
 
 import java.util.HashSet;
-import java.util.Objects;
 import java.util.Set;
 
 public class AgendaContatos {
@@ -39,6 +38,19 @@ public class AgendaContatos {
         }
         return contatoAutualizado;
     }
+    // outra forma de fazer a mesma chamada do método
+
+    /*public int atulaozarNumeroContato(String nome, int novoTelefone){
+        int fone = 0;
+        for (Contato contato: contatoSet) {
+            if(contato.getNome().equalsIgnoreCase(nome)){
+                contato.setTelefone(novoTelefone);
+                fone = contato.getTelefone();
+                break;
+            }
+        }
+        return  fone;
+    }*/
 
 
 }
